@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="cont">
+        <p id="hh"></p>
+    </div>
+    
+    
+</body>
+<script>
+    var container = document.getElementById("cont");
+    container.style.backgroundColor= "yellow"
+    container.style.width="500px";
+    container.style.textAlign ="center";
+    container.style.border= "black 2px solid";
+    document.getElementsByTagName("p")[0].innerHTML = "Hello world!";
+    
+    var word = document.getElementById("hh");
+    word.style.fontSize="50px";
+
+    // var messageElement = document.getElementById("message");
+    //     <!-- try changing the styles and run -->
+    //     messageElement.style="color:#090;border:1px solid #aaa;text-align:center;";
+    
+</script>
+</html>

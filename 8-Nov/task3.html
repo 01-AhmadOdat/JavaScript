@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fontFamily(){
+        let x = document.getElementById("fonts").value;
+        switch(x) {
+            case "Courier" : document.getElementById("pfont").style.color="red";break;
+            // case "Courier" : document.getElementById("pfont").style.fontFamily="Courier New', Courier, monospace";break;
+            case "Franklin" : document.getElementById("pfont").style.fontFamily="Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";break;
+            case "Courier" : document.getElementById("pfont").style.fontFamily="Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";break;
+            case "Courier" : document.getElementById("pfont").style.fontFamily="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";break;
+        }
+
+        }
+
+        function fontSize(){
+            let y= document.getElementById("size").value;
+            switch(y){
+                case "5": document.getElementById("pfont").style.fontSize="5px";break;
+            }
+        }
+       
+    
+    
+</script>
+
+<body>
+<form style="display:flex ;">
+    <div>
+    <select id="fonts" onchange="fontFamily()">
+        <option value="Courier">Courier New</option>
+        <option value="Franklin">Franklin Gothic Medium</option>
+        <option value="Lucida Sans">Lucida Sans', 'Lucida Sans Regular'</option>
+        <option value="Impact">Impact, Haettenschweiler, 'Arial Narrow Bold'</option>
+    </select>
+</div>
+<div>
+    <select id="size" onchange="fontSize()">
+        <option value="5">5</option>
+        <option value="15">15</option>
+        <option value="25">25</option>
+        <option value="35">35</option>
+    </select>
+</div>
+</form>
+<br> <br> <br> <br>
+
+<textarea cols="150" rows="10" id="pfont">
+    the quick brown fox jumps over the lazy dog
+</textarea>
+
+</body>
+</html>
