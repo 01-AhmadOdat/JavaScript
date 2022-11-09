@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Js.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Ahmad</legend>
+    
+    
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="">My Name</label></td>
+                <td><input id="name" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">My Age</label></td>
+                <td><input id="age" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">My Gender</label></td>
+                <td><input id="male" type="radio" name="1">
+                    <label for="Male">Male</label></td>
+                <td><input id="female" type="radio" name="1">
+                    <label for="Female">Female</label></td>
+                
+            </tr>
+            <tr>
+                <td><label  for="">My Brief describtion</label></td>
+                <td><textarea name="" id="brief" cols="30" rows="8"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for=""> University</label></td>
+                <td><input type="text"></td>
+                <td><label for="">My Major :</label>
+                <input type="text"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td><label for="">Programming Languages I prefer :</label></td>
+                <td></td>
+                <td><input id="js"  type="checkbox" value="JavaScript">JavaScript
+                <input id="p" value="Python" type="checkbox">Python
+                <input id="c" value="C#" type="checkbox">C#</td>
+            </tr>
+            
+        </table>
+        <button type="button" onclick="setData()">Save</button><br><br>
+
+        <button type="button" onclick="getData()">bring</button>
+
+            
+            
+    </fieldset>
+    
+    </form>
+    <div id="cont" > 
+        <h5 id="card"></h5>
+        <h5 id="card1"></h5>
+        <h5 id="card2"></h5>
+        <h5 id="card3"></h5>
+        <h5 id="card4"></h5>
+        <h5 id="card5"></h5>
+        <h5 id="card6"></h5>
+        <h5 id="card7"></h5>
+        <h5 id="card8"></h5>
+    </div>
+    
+    
+        <!-- <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <label for="display">Name:</label>
+                <input type="text" id="result" value="result" name="display" disabled>
+            </div> -->
+        
+    
+
+    
+</body>
+</html>
+<!-- --------------------------
+<p id="myP">I am a paragraph.</p>
+
+<p>The content of "myP" is:</p>
+<p id="demo"></p>
+
+<script>
+let html = document.getElementById("myP").innerHTML;
+document.getElementById("demo").innerHTML = html;
+</script>
+
+</body>
+
+-------------------------------- -->
